@@ -31,7 +31,9 @@ selection;
 function fnsec() {
 		var hfd = how_far_down();
 		if (!check){
-			if (hfd > 860 && hfd < 1160) {
+			if (hfd > 300 && hfd < 750) {
+				instruction('double click open profile', 38)
+			} else if (hfd > 860 && hfd < 1160) {
 				instruction('click to animate', 20)
 			} else if (hfd > 1760 && hfd < 2390 || hfd > 2990 && hfd < 3242 || hfd > 4142 && hfd < 4360) {
 				instruction('click to see analysis of user', 38)
@@ -41,7 +43,7 @@ function fnsec() {
 		}
 
 		if (check) {
-			if (hfd < 860 || hfd > 1160 && hfd < 1760 || hfd > 2390 && hfd < 2990 || hfd > 3242 && hfd < 4142 || hfd > 4360) {
+			if (hfd < 300 || hfd > 750 && hfd < 860 || hfd > 1160 && hfd < 1760 || hfd > 2390 && hfd < 2990 || hfd > 3242 && hfd < 4142 || hfd > 4360) {
 				instruction()
 			} 
 		}
@@ -114,10 +116,17 @@ function tweet_loaded(err, pjo, bot) {
 
 	d3.select('#pjo_pic')
 		.on('click', function() { draw_charts(holder[0], clr, cl0, true, holder[2]) })
+		.on('dblclick', function OpenInNewTab() {
+		    var win = window.open('https://twitter.com/PeeJayOh', '_blank');
+		    win.focus();
+		})
 
 	d3.select('#bot_pic')
 		.on('click', function() { draw_charts(holder[1], clr, cl1, true, holder[3]) })
-
+		.on('dblclick', function OpenInNewTab() {
+		    var win = window.open("https://twitter.com/door_mouse_bot", '_blank');
+		    win.focus();
+		})
 };
 
 
