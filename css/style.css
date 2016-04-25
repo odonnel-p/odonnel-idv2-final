@@ -171,7 +171,7 @@ body
 				width: 500px;
 				height: 210px;
 				margin: 0;
-				float left;
+				float: left;
 			}
 
 			#it2
