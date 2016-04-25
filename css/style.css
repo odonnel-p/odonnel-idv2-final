@@ -1,0 +1,317 @@
+body 
+{
+	/*font-family: 'Anonymous Pro', Courier;
+	font-family: 'Oswald', sans-serif;*/
+	position: absolute;
+	margin: 40px 150px 40px 40px;
+	/*background: #eee;*/
+}
+
+#full_container
+{
+	position: static;
+	width: 1520px;
+	height: 4000px;
+	background: #fff;
+	/*min-width: 1200px;*/
+}
+
+	#full_container > .plot
+	{
+		position: static;
+		width: 1500px;
+		margin-bottom: 60px;
+		z-index: 0;
+		padding: 10px;
+	}
+
+		.plot > *
+		{
+			position:relative;
+		}
+
+		.restrict
+		{
+			position:relative;
+			z-index: 99;
+			float:right;
+			width:360;
+		}
+
+	.plot.title
+	{
+		height: 1750px;
+	}
+
+	.plot#plot1
+	{
+		/*background: #eeedfd;*/
+		height: 1200px;
+	}
+
+		.bar_chart .box .histogram 
+		{
+			position: relative;
+			z-index: 98;
+		}
+
+		.bar_chart
+		{
+			height:1100px;
+			background: #fff;
+		}
+
+			#plot1expp
+			{
+				position: absolute;
+				bottom: 45px;
+			}
+
+	.plot#plot2
+	{
+		/*background: #eeedfd;*/
+		height: 1025px;
+	}
+		.box
+		{
+			height:370px;
+			margin-bottom:10px;
+			background: #fff
+		}
+
+		.box_plot
+		{
+			margin-top: 200px;
+		}
+
+	.plot#plot3
+	{
+		/*background: #eeedfd;*/
+		height: 950px;
+		margin-bottom: 1755px;
+
+	}
+
+		.histogram
+		{
+			margin-top: 100px;
+			height:835px;
+			background: #fff;
+		}
+	
+	.static_title
+	{
+		/*background: yellow;*/
+		position: absolute;
+		top: 232px;
+		right: 0px;
+	}
+
+		.artist
+		{
+			position: absolute;
+			/*background: yellow;*/
+			text-align: right;
+			top: 470px;
+			right: 3px;
+			font-weight: 300;
+			line-height: .55em;
+			font-size: 1.25em;
+		}
+
+		#name, #institution
+		{
+			font-weight: 300;
+		}
+
+		.explain
+		{
+			position: absolute;
+			width: 1400;
+			top: 670px;
+			left: 20px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			text-align: left;
+            /*background-color: #575757;*/
+		}
+
+			.explain > *
+			{
+				position: relative;
+				float:left;
+				margin-left: auto;
+				margin-right: auto;
+
+				width: 360px;
+			}
+
+			.explain > #left2
+			{
+				width: 360px;
+				padding: 0 40px 0 40px;
+			}
+
+		.constructor 
+		{
+			position: absolute;
+			width: 100%;
+			height:510px;
+			top: 1060px;
+			left: -40;
+			/*background: #eee;*/
+		}
+
+			.invidual_tweet
+			{
+				/*background: orange;*/
+				position: relative;
+				top: 30px;
+				left: 40px;
+				width: 500px;
+				height: 210px;
+				margin: 0;
+				float left;
+			}
+
+			#it2
+			{
+
+			}
+
+			#it3
+			{
+				top: 8px;
+			}
+
+			#it4
+			{
+				position: absolute;
+				top: 250px;
+				left:1060px;
+			}
+
+	.line-drawing
+	{
+		position:absolute;
+		top: 0px;
+		left: 40px;
+		height: 700px;
+		z-index: 99;
+	}
+
+#floater
+{
+	position: fixed;
+	/*background: green;*/
+	width:100px;
+	height:200px;
+	top: 255px;
+	left: 1570px;
+}
+	
+	.instruction
+	{
+		position: fixed;
+		padding: 2px;
+		font-family: 'Anonymous Pro', Courier;
+		font-weight: 400;
+		font-size: 16px;
+		background: #ffffcc;
+		width: 140px;
+		top: 335px;
+		left: 1680px;
+	}
+
+	#floater > .profile_pic
+	{
+		position: relative;
+		width: 80px;
+		height: 80px;
+		margin-bottom: 10px;
+		/*background: #fff;*/
+	}
+
+	#doormouse
+	{
+		border: 5px solid #4A3D2F;
+		opacity:1;
+	}
+
+	#peejayoh
+	{
+		border: 5px solid #2F2F79;
+		opacity: 1;
+	}
+
+	#doormouse:hover
+	{
+		box-shadow: 0 6px 8px 0 rgba(54,40,25,0.24), 0 9px 25px 0 rgba(54,40,25,0.19);
+		/*background: #72685e;*/
+	}
+
+	#peejayoh:hover
+	{
+		box-shadow: 0 6px 8px 0 rgba(28,28,72,0.24), 0 9px 25px 0 rgba(28,28,72,0.19);
+	}
+
+	#bot_pic:hover ~ #pjo_pic
+	{
+		opacity: .2;
+	}
+
+	#pjo_pic:hover ~ #bot_pic
+	{
+		opacity: .2;
+	}
+
+h2
+{
+	font-family: 'Anonymous Pro', Courier;
+	font-size: 4.5em;
+	font-weight: 700;
+	text-align: right;
+	line-height: .54em;
+}
+
+	h2#sub 
+	{
+		font-size: 3em;
+		font-weight: 400;
+	}
+
+h3
+{
+	font-family: 'Anonymous Pro', Courier;
+	font-size: 3em;
+	font-weight: 400;
+	text-align: right;
+	margin: 20px 0 20px 0;
+}
+
+h4
+{
+	font-family: 'Oswald', sans-serif;
+}
+
+.columns
+{
+	line-height: 1.65em;
+	font-weight: 300;
+	font-size: 1.25em;
+}
+
+.bar rect {
+  fill: steelblue;
+  shape-rendering: crispEdges;
+}
+
+.bar text {
+  fill: #fff;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

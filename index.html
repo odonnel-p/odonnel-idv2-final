@@ -1,0 +1,108 @@
+<HTML>
+	<HEAD>
+		<TITLE>Untitled Twitter Project</TITLE>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://d3js.org/queue.v1.min.js"></script>
+
+		<link href='https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	
+	</HEAD>
+
+	<BODY>
+
+		<div id="full_container">
+
+			<div class="plot title"> 
+
+				<div class="static_title">
+					<h2 id='sub'>the artist and his</h2>
+					<h2 id='main'>Non-Sequitur TwitterBot</h2>
+				</div>
+
+				<div class="artist author">
+					<h4 id="name"> Patrick J. O'Donnel</h4>
+					<h4 id="institution"> NEU 2015</h4>
+				</div>
+
+				<div class="explain text">
+					<h4 class="columns" id="left1">Grumpy wizards make toxic brew for the evil Queen and Jack. This is a description and has to be smaller than the other section. It is supplementary and educational. It will be great. This will keep going. It is supplementary and educational. It will be great.</h4>
+					<h4 class="columns" id="left2">It is supplementary and educational. It will help people understand the graphics. Bar charts, peonies, and coffee stains. Horray, for this. My lovely writes and sings more beautiful than I can imagine. The need for another line is too real to understand.</h4>
+					<h4 class="columns" id="left3">Bar charts, peonies, and coffee stains. Horray, for this. A paragraph my lovely writes and thus. Grumpy wizards make toxic brew for the evil Queen and Jack. When we are smaller than the other, it is. To move forward is to get the stuff, not anyone else. 
+					<hr>We are all Twitter and Twitter is us.</h4>
+				</div>
+
+				<div class='Tweet constructor'>
+
+					<div class='invidual_tweet' id='it1'>
+						<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Listening to my aunt try to name any American Idol winner other than Kelly Clarkson is the closest I&#39;ve came to an orgasm in months.</p>&mdash; Patric.in_Wonderland (@PeeJayOh) <a href="https://twitter.com/PeeJayOh/status/685256526370631681">January 8, 2016</a></blockquote>
+						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+
+					<div class='invidual_tweet' id='it2'>
+						<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I just sang a woeful rendition of James Blake to my Jarlsberg dip and a living room full of nobody else.</p>&mdash; Patric.in_Wonderland (@PeeJayOh) <a href="https://twitter.com/PeeJayOh/status/555215385327587328">January 14, 2015</a></blockquote>
+						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+
+					<div class='invidual_tweet' id='it3'>
+						<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Sorry to wake you with screams but it was an appropriate reaction as a naked Bear Grylls was killed by a black octopus in my night terror.</p>&mdash; Patric.in_Wonderland (@PeeJayOh) <a href="https://twitter.com/PeeJayOh/status/581848946848493568">March 28, 2015</a></blockquote>
+						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+
+					<div class='invidual_tweet' id='it4'>
+						<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Listening to my Jarlsberg dip and a living room as a naked Bear Grylls was killed by a giant here I come.</p>&mdash; Bot.Door_Mouse (@door_mouse_bot) <a href="https://twitter.com/door_mouse_bot/status/722855475272949760">April 20, 2016</a></blockquote>
+						<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+
+					<svg class='line-drawing' width='1520px' height='0' position='absolute'></svg>
+
+				</div>
+
+			</div>
+			<div class="plot" id="plot1"> 
+				<h3>Word Frequency Analysis</h3>
+				<div class='restrict'>
+					<hr>
+					<h4 class="columns" id="plot1exp">This is supplementary and educational. It will help people understand the graphics. Bar charts, peonies, and coffee stains. Horray, for this. My lovely writes and sings more beautiful than I can imagine. The need for another line is too real to understand.</h4>
+				</div>
+				<div class='bar_chart' id='graphic'></div>
+				<div class='restrict'>
+					<h4 class="columns" id="plot1expp">This is supplementary and educational. It will help people understand the graphics. Bar charts, peonies, and coffee stains. Horray, for this. My lovely writes and sings more beautiful than I can imagine. The need for another line is too real to understand.</h4>
+				</div>
+			</div>
+
+			<div class="plot" id="plot2">
+			<h3>Length Analysis</h3>
+				<div class='restrict'> 
+					<hr>
+					<h4 class="columns" id="plot2exp">This is supplementary and educational. It will help people understand the graphics. Bar charts, peonies, and coffee stains. Horray, for this. My lovely writes and sings more beautiful than I can imagine. The need for another line is too real to understand.</h4>
+				</div>
+					<div class='box box_plot' id='myDiv'></div>
+					<div class='box rhythm' id='rhythem'></div>
+			</div>
+
+			<div class="plot" id="plot3">
+			<h3>Timeline Analysis</h3>
+			<div class='restrict'>
+				<hr>
+				<h4 class="columns" id="plot3exp">This is supplementary and educational. It will help people understand the graphics. Bar charts, peonies, and coffee stains. Horray, for this. My lovely writes and sings more beautiful than I can imagine. The need for another line is too real to understand.</h4>
+				</div>
+				<div class='timeline histogram' id='histog'></div>
+			</div>
+		
+		</div>
+
+		<div id="floater"> 
+			<div class="profile_pic btn float" id="peejayoh"><img src="https://pbs.twimg.com/profile_images/714596692360839172/CMzxTc5v.jpg" width="80px" height="80px" id='pjo_pic'></div>
+			<div class="profile_pic btn float" id="doormouse"><img src="https://pbs.twimg.com/profile_images/714596318853857280/9XqJ1oZz.jpg" width="80px" height="80px" id='bot_pic'></div>
+		</div>
+
+
+	<script src="./scripts/script.js"> </script>
+	<script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	</BODY>
+</HTML>
