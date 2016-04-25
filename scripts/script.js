@@ -195,8 +195,12 @@ function draw_histogram(ar, cl){
 	  }
 	];
 
+	var layout = {
+		title: '',
+		showlegend:false
+	};
 
-	Plotly.newPlot('histog', data);
+	Plotly.newPlot('histog', data, layout);
 
 	// console.log(ar);
 	// // A formatter for counts.
