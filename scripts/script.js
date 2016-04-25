@@ -86,8 +86,8 @@ function how_far_down() { var scrollTop = $(window).scrollTop();
 
 
 queue()
-	.defer(d3.csv, "../data/PeeJayOhtweets.csv", parse) 
-	.defer(d3.csv, "../data/door_mouse_bottweets.csv", parse)
+	.defer(d3.csv, "./data/PeeJayOhtweets.csv", parse) 
+	.defer(d3.csv, "./data/door_mouse_bottweets.csv", parse)
 	.await(tweet_loaded);
 	d3.csv
 
